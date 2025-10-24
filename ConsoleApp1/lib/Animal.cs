@@ -1,6 +1,6 @@
-namespace ConsoleApp1;
+using ConsoleApp1.lib;
 
-public record Person(string FirstName, string LastName);
+namespace ConsoleApp1;
 
 internal interface ILoggable
 {

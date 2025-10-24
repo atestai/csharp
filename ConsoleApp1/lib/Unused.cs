@@ -42,8 +42,9 @@ public static class Unused
             {
                 Name = "Green Farm",
                 Location = "Texas",
-                Owner = new Person("Alice", "Johnson")
+                Owner = new Person("Alice", "Johnson") { Id = 10, Age = 45 }
             };
+            
             myFarm.AddAnimal(cat);
             myFarm.AddAnimal(dog);
             myFarm.AddAnimal(new Pig());
@@ -54,7 +55,6 @@ public static class Unused
             myFarm.MakeAllSounds();
 
             return;
-
             Person father = new("John", "Doe");
             Person mother = new("Jane", "Smith");
             Person kid1 = father with { FirstName = "Jimmy" };
