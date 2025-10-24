@@ -1,0 +1,4 @@
+process:
+  consoleApp1:
+    command: dotnet watch
+    working_dir: "./ConsoleApp1"

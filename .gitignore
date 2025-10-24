@@ -1,0 +1,71 @@
+# Ignora binari e file temporanei per progetti C# / .NET
+
+# Build outputs
+bin/
+obj/
+out/
+publish/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+.nuget/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Rider caches, ReSharper
+_ReSharper*/
+*.DotSettings
+
+# Logs, caches, temp
+*.log
+*.cache
+*.tmp
+*.temp
+
+# Deployment / generated files
+wwwroot/
+node_modules/
+
+# Package managers
+.vscode-test/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets / local config
+appsettings*.Local.json
+secrets.json
+*.publishsettings
+
+# Misc
+*.vsix
+*.psess
+*.vsp
+.packages
+
+# Optional: ignore user-specific files
+*.ide
+*.sublime-workspace
