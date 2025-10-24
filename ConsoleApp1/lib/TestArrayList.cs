@@ -88,12 +88,10 @@ public static class TestArrayList
             true
         };
 
-    
         arrayList.AddRange(new object[] { 11, 12, 13 });
         arrayList.Insert(0, 0);
         arrayList.Remove(7.0);
         arrayList.RemoveAt(1);
-
 
         foreach (var item in arrayList)
         {
