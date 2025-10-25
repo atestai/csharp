@@ -6,6 +6,8 @@ public static class TSwitch
 {
     public static void Test()
     {
+        //switch expression su int con relational patterns
+
         int a = 5;
         if (a > 0)
         {
@@ -27,7 +29,6 @@ public static class TSwitch
             Age = 2,
             Species = "Felis catus"
         };
-
 
         var t2 = o switch
         {
@@ -57,35 +58,34 @@ public static class TSwitch
             Species = "Panthera leo"
         }));
 
-        o2 = new Dog
+        Console.WriteLine(NewMethod(new Dog
         {
-            Name = "Max",
+            Name = "Oldie",
+            Age = 12,
+            Species = "Canis lupus familiaris"
+        }));
+
+        Console.WriteLine(NewMethod(new Dog
+        {
+            Name = "Puppy",
             Age = 3,
             Species = "Canis lupus familiaris"
-        };        
+        }));
 
-        if (o2 is not null)
+        Console.WriteLine(NewMethod(new Dog
         {
-            string sound2;
-            if (o2 is Dog d && d.Age < 5)
-            {
-                sound2 = "mini dog bark";
-            }
-            else if (o2 is Dog d2 && d2.Age >= 5 && d2.Age < 10)
-            {
-                sound2 = "middle dog bark";
-            }
-            else if (o2 is Dog d3 && d3.Age >= 10 && d3.Age < 15)
-            {
-                sound2 = "old dog bark";
-            }
-            else
-            {
-                sound2 = "unknown";
-            }
+            Name = "Middle",
+            Age = 8,
+            Species = "Canis lupus familiaris"
+        }));
 
-            Console.WriteLine(sound2);
-        }
+        Console.WriteLine(NewMethod(new Cat
+        {
+            Name = "Middle",
+            Age = 8,
+            Species = "Felis catus"
+        }));
+
 
         static string NewMethod(Animal? o2)
         {
@@ -94,10 +94,10 @@ public static class TSwitch
                 //{ } when o2 is var x => $"{x.Name} is of type {x.GetType().Name}",
                 Lion c => $"{c.GetType().Name} says roar",
                 Cat c => $"{c.GetType().Name} says meow",
-                { } when o2 is Dog d && d.Age < 5 => "mini dog bark",
-                { } when o2 is Dog d && d.Age > 5 && d.Age < 10 => "middle dog bark",
-                { } when o2 is Dog d && d.Age >= 10 && d.Age < 15 => "old dog bark",
-                _ => "unknown"
+                { } when o2 is Dog d && d.Age < 5 => "Mini dog bark",
+                { } when o2 is Dog d && d.Age > 5 && d.Age < 10 => "Middle dog bark",
+                { } when o2 is Dog d && d.Age >= 10 && d.Age < 15 => "Old dog bark",
+                _ => "Unknown animal sound"
             };
             return sound2;
         }
