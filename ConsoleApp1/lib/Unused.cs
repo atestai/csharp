@@ -79,8 +79,6 @@ public static class Unused
             Console.WriteLine($"Are the kids equal? {grandpa == kid2}");
     }   
 
-
-
     static TimeSpan WhileDemo(long number, out TimeSpan duration)
     {
         int count = 0;
@@ -114,7 +112,6 @@ public static class Unused
             Console.WriteLine("Positive");
         }
 
-
         var t = a switch
         {
             > 0 => "Positive",
@@ -141,21 +138,6 @@ public static class Unused
 
         Console.WriteLine(t2);
 
-        // Animal o2 = new Dog
-        // {
-        //     Name = "Buddy",
-        //     Age = 21,
-        //     Species = "Canis lupus familiaris"
-        // };
-
-        // string sound2 = o2 switch
-        // {
-        //     { } when o2 is Lion c => $"{c.GetType().Name} says roar",
-        //     Cat c => $"{c.GetType().Name} says meow",
-        //     Dog d when d.Age > 5 => "old dog bark",
-        //     _ => "unknown"
-        // };
-        // Console.WriteLine(sound2);
 
         Animal? o2 = null;
 
