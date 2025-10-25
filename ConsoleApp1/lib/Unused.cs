@@ -10,7 +10,7 @@ public static class Unused
     {
         Console.WriteLine("This is a test method in Unused class.");
 
-    
+
             Cat cat = new()
             {
                 Name = "Whiskers",
@@ -79,27 +79,6 @@ public static class Unused
             Console.WriteLine($"Are the kids equal? {grandpa == kid2}");
     }   
 
-
-    static void DataTypesDemo()
-    {
-        int myInt = 42;
-        long myLong = 1234567890123456789L;
-        float myFloat = 35e1F;
-        double myDouble = 42.0D;
-        decimal myDecimal = 99.99m;
-        bool myBoolean = true;
-        string myString = "Hello, W'orld!";
-        object myObject = new { Property1 = "Value1", Property2 = 123 };
-
-        Console.WriteLine($"Integer: {myInt}");
-        Console.WriteLine($"Long: {myLong}");
-        Console.WriteLine($"Float: {myFloat}");
-        Console.WriteLine($"Double: {myDouble}");
-        Console.WriteLine($"Decimal: {myDecimal}");
-        Console.WriteLine($"Boolean: {myBoolean}");
-        Console.WriteLine($"String: {myString}");
-        Console.WriteLine($"Object: {myObject}");
-    }
 
 
     static TimeSpan WhileDemo(long number, out TimeSpan duration)
