@@ -38,38 +38,35 @@ public static class TSwitch
 
         Console.WriteLine(t2);
 
-        // Animal o2 = new Dog
-        // {
-        //     Name = "Buddy",
-        //     Age = 21,
-        //     Species = "Canis lupus familiaris"
-        // };
-
-        // string sound2 = o2 switch
-        // {
-        //     { } when o2 is Lion c => $"{c.GetType().Name} says roar",
-        //     Cat c => $"{c.GetType().Name} says meow",
-        //     Dog d when d.Age > 5 => "old dog bark",
-        //     _ => "unknown"
-        // };
-        // Console.WriteLine(sound2);
-
         Animal? o2 = null;
+        Console.WriteLine(NewMethod(o2));
 
-        string sound2 = o2 switch
+        Animal o3 = new Dog
         {
-            //{ } when o2 is var x => $"{x.Name} is of type {x.GetType().Name}",
-            Lion c => $"{c.GetType().Name} says roar",
-            Cat c => $"{c.GetType().Name} says meow",
-            { } when o2 is Dog d && d.Age < 5 => "mini dog bark",
-            { } when o2 is Dog d && d.Age > 5 && d.Age < 10 => "middle dog bark",
-            { } when o2 is Dog d && d.Age >= 10 && d.Age < 15 => "old dog bark",
-            _ => "unknown"
+            Name = "Buddy",
+            Age = 7,
+            Species = "Canis lupus familiaris"
         };
 
-        Console.WriteLine(sound2);
+        Console.WriteLine(NewMethod(o3));
 
+        Console.WriteLine(NewMethod(new Lion
         {
+            Name = "Simba",
+            Age = 4,
+            Species = "Panthera leo"
+        }));
+
+        o2 = new Dog
+        {
+            Name = "Max",
+            Age = 3,
+            Species = "Canis lupus familiaris"
+        };        
+
+        if (o2 is not null)
+        {
+            string sound2;
             if (o2 is Dog d && d.Age < 5)
             {
                 sound2 = "mini dog bark";
@@ -88,6 +85,21 @@ public static class TSwitch
             }
 
             Console.WriteLine(sound2);
+        }
+
+        static string NewMethod(Animal? o2)
+        {
+            string sound2 = o2 switch
+            {
+                //{ } when o2 is var x => $"{x.Name} is of type {x.GetType().Name}",
+                Lion c => $"{c.GetType().Name} says roar",
+                Cat c => $"{c.GetType().Name} says meow",
+                { } when o2 is Dog d && d.Age < 5 => "mini dog bark",
+                { } when o2 is Dog d && d.Age > 5 && d.Age < 10 => "middle dog bark",
+                { } when o2 is Dog d && d.Age >= 10 && d.Age < 15 => "old dog bark",
+                _ => "unknown"
+            };
+            return sound2;
         }
     }
 }
