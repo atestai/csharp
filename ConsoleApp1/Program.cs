@@ -7,8 +7,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             //TestArrayList.Test();
-    
-            TList.Test();
+
+            //TList.Test();
+            
+            TestDataTypes.Test();
+
         }
     }
 }
