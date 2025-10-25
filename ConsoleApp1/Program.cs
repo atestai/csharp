@@ -11,8 +11,7 @@ namespace ConsoleApp1
             //TList.Test();
             
             //TestDataTypes.Test();
-            //TSwitch.Test();
-
+            TSwitch.Test();
         }
     }
 }
