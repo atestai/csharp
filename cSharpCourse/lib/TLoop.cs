@@ -1,14 +1,14 @@
-using System;
 using System.Diagnostics;
 
-namespace ConsoleApp1.lib;
+namespace cSharpCourse.lib;
 
 public static class TLoop
 {
 
     public static void Test()
     {
-        var stopwatch = Stopwatch.StartNew();
+        Stopwatch stopwatch;
+        stopwatch = Stopwatch.StartNew();
 
         // ciclo while
         int i = 0;
@@ -28,7 +28,7 @@ public static class TLoop
         
 
         // ciclo for
-        stopwatch = Stopwatch.StartNew();
+        
         for (int k = 0; k < 5; k++)
         {
             Console.WriteLine($"For loop iteration: {k}");

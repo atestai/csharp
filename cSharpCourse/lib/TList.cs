@@ -1,6 +1,4 @@
-using System;
-
-namespace ConsoleApp1.lib;
+namespace cSharpCourse.lib;
 
 /*
     * TList class to demonstrate basic functionality.

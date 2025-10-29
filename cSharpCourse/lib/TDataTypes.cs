@@ -1,7 +1,5 @@
-using System;
 
-namespace ConsoleApp1.lib;
-
+namespace cSharpCourse.lib;
 /*
     This class demonstrates the use of various data types in C#,
     including primitive types, object types, var, dynamic, and a custom record type.
