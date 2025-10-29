@@ -1,4 +1,4 @@
-﻿using CSharpCourse.lib;
+﻿using cSharpCourse.lib;
 
 namespace CSharpCourse
 {

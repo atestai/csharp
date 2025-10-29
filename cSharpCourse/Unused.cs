@@ -1,4 +1,6 @@
 
+using cSharpCourse.lib;
+using System.Diagnostics;
 
 public static class Unused
 {

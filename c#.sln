@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyKestrelApp", "MyKestrelAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyKestrelMVCApp", "MyKestrelMVCApp\MyKestrelMVCApp.csproj", "{A1B2C3D4-E5F6-7890-1234-56789ABCDEF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cSharpCourse", "ConsoleApp1\cSharpCourse.csproj", "{EEBC6B16-E733-48EA-A2A6-5D6731A437D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cSharpCourse", "cSharpCourse\cSharpCourse.csproj", "{EEBC6B16-E733-48EA-A2A6-5D6731A437D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

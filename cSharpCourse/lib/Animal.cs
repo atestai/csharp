@@ -1,6 +1,5 @@
-namespace CSharpCourse.lib
+namespace cSharpCourse.lib
 {
-
 
     internal interface ILoggable
     {
