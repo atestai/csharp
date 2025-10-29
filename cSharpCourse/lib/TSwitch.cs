@@ -1,7 +1,4 @@
-using System;
-
-namespace ConsoleApp1.lib;
-
+namespace cSharpCourse.lib;
 public static class TSwitch
 {
     public static void Test()

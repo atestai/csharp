@@ -1,4 +1,4 @@
-namespace ConsoleApp1;
+namespace cSharpCourse.lib;
 
 public record DailyTemperature(double HighTemp, double LowTemp)
 {

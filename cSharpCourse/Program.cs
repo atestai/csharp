@@ -1,6 +1,6 @@
-﻿using ConsoleApp1.lib;
+﻿using CSharpCourse.lib;
 
-namespace ConsoleApp1
+namespace CSharpCourse
 {
     static class Program
     {

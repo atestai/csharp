@@ -1,7 +1,4 @@
-using System;
-using System.Diagnostics;
-
-namespace ConsoleApp1.lib;
+namespace cSharpCourse.lib;
 
 public static class TLoop
 {

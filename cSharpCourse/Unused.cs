@@ -1,7 +1,4 @@
-using System;
-using System.Diagnostics;
 
-namespace ConsoleApp1.lib;
 
 public static class Unused
 {
