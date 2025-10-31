@@ -77,22 +77,6 @@ public static class Unused
         Console.WriteLine($"Are the kids equal? {grandpa == kid2}");
     }
 
-    static TimeSpan WhileDemo(long number, out TimeSpan duration)
-    {
-        int count = 0;
-        var stopwatch = Stopwatch.StartNew();
-
-        while (count < number)
-        {
-            count++;
-        }
-
-        stopwatch.Stop();
-        duration = stopwatch.Elapsed;
-        Console.WriteLine($"Duration: {duration.TotalMilliseconds} ms");
-
-        return duration;
-    }
 
     public static void TestLocalFunction()
     {
@@ -220,24 +204,6 @@ public static class Unused
             Console.WriteLine($"LinkedHashSet item: {item}");
         }
     }
-
-
-    public static void TestHashSet()
-    {
-        var hashSet = new HashSet<int> { 1, 2, 3, 4, 5 };
-
-        Console.WriteLine($"Initial count: {hashSet.Count}");
-
-        hashSet.Add(3); // Duplicate, won't be added
-        hashSet.Add(6);
-        hashSet.Add(7);
-
-        foreach (var item in hashSet)
-        {
-            Console.WriteLine($"HashSet item: {item}");
-        }
-    }
-
 
     public static void TestDictionary()
     {
