@@ -18,7 +18,9 @@ namespace CSharpCourse
             //THashTable.Test();
             //THashSet.Test();
 
-            TDictionary.Test();
+            //TDictionary.Test();/
+
+            TStack.Test();
         }
     }
 }

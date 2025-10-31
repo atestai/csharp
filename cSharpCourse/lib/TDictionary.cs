@@ -231,11 +231,6 @@ public static class TDictionary
             Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
         }
 
-        foreach (KeyValuePair<string, int> item in dictionary)
-        {
-            Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
-        }
-
         dictionary.Remove("One");
         if (dictionary.TryGetValue("Two", out var value))
         {
@@ -263,6 +258,7 @@ public static class TDictionary
         {
             Console.WriteLine(key);
         }
+        
         Console.WriteLine("Values:");
         foreach (var val in values)
         {
