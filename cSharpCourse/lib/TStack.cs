@@ -258,7 +258,7 @@ public static class TStack
         var visited = new HashSet<int>();
         var stackDFS = new Stack<int>();
         stackDFS.Push(1);
-        
+
         Console.WriteLine("DFS traversal:");
         while (stackDFS.Count > 0)
         {
@@ -268,11 +268,5 @@ public static class TStack
             foreach (var neighbor in graph[node])
                 stackDFS.Push(neighbor);
         }
-
-
-
-
-
     }
-
 }
