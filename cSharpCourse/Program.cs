@@ -9,11 +9,14 @@ namespace CSharpCourse
             //TestArrayList.Test();
 
             //TList.Test();
-            
+
             //TestDataTypes.Test();
             //TSwitch.Test();
 
-            TLoop.Test();
+            //TLoop.Test();
+
+            THashTable.Test();
+            THashSet.Test();
         }
     }
 }
