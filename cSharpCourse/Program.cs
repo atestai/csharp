@@ -15,8 +15,10 @@ namespace CSharpCourse
 
             //TLoop.Test();
 
-            THashTable.Test();
-            THashSet.Test();
+            //THashTable.Test();
+            //THashSet.Test();
+
+            TDictionary.Test();
         }
     }
 }
