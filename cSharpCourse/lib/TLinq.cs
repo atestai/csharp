@@ -82,7 +82,6 @@ public class TLinq
         var instance = new TLinq();
         Console.WriteLine("list: " + string.Join(", ", instance.Numbers));
 
-
         Console.WriteLine("Method Syntax:");
         instance.MethodSyntax();
 
@@ -96,7 +95,6 @@ public class TLinq
         var largeNumbers = Enumerable.Range(1, 1_000_000);
         var oddParallel = largeNumbers.AsParallel().Where(n => (n & 1) == 0).ToList();
         Console.WriteLine("Odd Numbers in Parallel: " + string.Join(", ", oddParallel.Take(10)) + " ...");
-
 
         int oddCount = instance.Numbers.Count(n => n % 2 != 0);
         Console.WriteLine("Count of Odd Numbers: " + oddCount);
