@@ -21,7 +21,11 @@ namespace CSharpCourse
             //TDictionary.Test();/
 
             //TStack.Test();
-            TQueue.Test();
+            //TQueue.Test();
+
+            
+
+            TLinq.Test();
         }
     }
 }
