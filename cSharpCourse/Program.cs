@@ -22,10 +22,11 @@ namespace CSharpCourse
 
             //TStack.Test();
             //TQueue.Test();
+  
 
-            
+            //TLinq.Test();
 
-            TLinq.Test();
+            Toop.Test();
         }
     }
 }
